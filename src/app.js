@@ -1,4 +1,4 @@
-const API = "YOUR API KEY";
+const API = "t5457628f377o83580004ab48e65d335";
 
 const dayEl = document.querySelector(".default_day");
 const dateEl = document.querySelector(".default_date");
@@ -51,7 +51,7 @@ async function findLocation(name) {
   dayInfoEl.innerHTML = "";
   listContentEl.innerHTML = "";
   try {
-    const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${API}`;
+    const API_URL = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${API}`;
     const data = await fetch(API_URL);
     const result = await data.json();
     console.log(result);
@@ -109,7 +109,7 @@ function rightSideContent(result) {
 }
 
 async function displayForeCast(lat, long) {
-  const ForeCast_API = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${API}`;
+  const ForeCast_API = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${API}`;
   const data = await fetch(ForeCast_API);
   const result = await data.json();
   // filter the forecast

@@ -18,7 +18,7 @@ body {
 .container {
   max-width: 800px;
   width: 100%;
-  background-color: #881bdb;
+  background-color: #5e1bdb;
   color: #fff;
   border-radius: 25px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -75,6 +75,13 @@ body {
   font-size: 4rem;
   font-weight: 800;
 }
+.info{
+  color: blanchedalmond;
+  font-size: smaller;
+}
+.info-url{
+  color: #7263b5;
+}
 
 /* content section */
 .content_section {
@@ -90,7 +97,7 @@ body {
   width: 84%;
   outline: none;
   background: transparent;
-  border: 1px solid #48374f;
+  border: 1px solid #40374f;
   border-radius: 5px;
   padding: 0.7rem 1rem;
   font-family: inherit;
@@ -109,7 +116,7 @@ body {
   font-size: 0.8rem;
   outline: none;
   border: none;
-  background: #955cc0;
+  background: #935cc0;
   color: #fff;
   cursor: pointer;
 }
@@ -145,7 +152,7 @@ body {
 .list_content ul li:hover {
   transform: scale(1.1);
   background-color: #fff;
-  color: #292331;
+  color: #2b2331;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
